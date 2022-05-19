@@ -16,14 +16,13 @@ var times = function(i){
 
 for ( var i=0; i<9; i++){
     var row= $("<div class='row'>");
-    var columnTime=$(`<div class='col-sm-2 bg-light'>${times(i)}</div>`);
-    var columnDisc=$("<div class='col-sm-8 bg-secondary'></div>");
-    var columnSave=$("<div class='col-sm-2 bg-success'></div>");
+    var columnTime=$(`<div class='col-sm-1 bg-light time border-top border-secondary'>${times(i)}</div>`);
+    var columnDisc=$(`<div class='col-sm-9 bg-secondary'></div>`);
+    var columnSave=$(`<div class='col-sm-1 bg-success save rounded'><buttom id="saveBtn${i} class="savebtn "><i class="fas fa-save"> Save</i></button></div>`);
     row.append(columnTime);
     row.append(columnDisc);
     row.append(columnSave);
     $(".container").append(row);
-    console.log(row,columnTime,columnDisc,columnSave,$(".container"));
     
 };
 

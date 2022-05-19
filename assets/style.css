@@ -34,6 +34,7 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  margin-bottom: 2px;
 }
 
 .hour {
@@ -68,5 +69,14 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.time, .fas {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.save {
+  margin-left: 2px;
 }
 
