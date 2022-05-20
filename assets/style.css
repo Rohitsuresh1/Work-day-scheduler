@@ -43,21 +43,6 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
-}
-
 .btn, .btn-success {
   height: 80px;
   width: 100px;
@@ -80,7 +65,6 @@ textarea {
 }
 
 .text {
-    background: rgb(201, 244, 250);
     height: 100%;
     width: 100%;
     border: none;

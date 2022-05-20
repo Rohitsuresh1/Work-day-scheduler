@@ -3,12 +3,19 @@ $("#currentDay").text(date).addClass("font-weight-bolder");
 
 var color = function(i) {
     var hour= new Date().getHours();
+    i+=9;
     console.log(hour);
-    while(i>=0){
-        console.log("number",i);
+    while(i>=9){
+        if(i==hour){
+            $(`#taskText${i-9}`).css("background","#ff6961");
+        }else if(i<hour){
+            // console.log("else if",i);
+            $(`#taskText${i-9}`).css("background","#d3d3d3");
+        }else{  
+            // console.log("else",i);
+            $(`#taskText${i-9}`).css("background","#77dd77");
+        }
         i--;
-        
-
     }
 };
 
@@ -46,6 +53,8 @@ $("button.btn.btn-success").click(function(e){
     var id=$(this).data("id");
     var data=$(this).parent().siblings().find("input").val();
     localStorage.setItem(id,data);
-    color(id);
+ 
 });
 
+setInterval(function(){color(8)},1000*60*5);
+color(8);
